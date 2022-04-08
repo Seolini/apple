@@ -46,8 +46,39 @@
 .bestM .best-title .bt-tit {font-size: 22px; padding-bottom: 5px;}
 .bestM .best-title .bt-desc {font-size: 22px; font-weight: 300; color: #818181; margin-bottom: 10px;}
 
+/* recentM */
+.recentM {padding: 10px ; margin-top: 19px; overflow: hidden;}
+.recentM .recent {float: left; width: 49%; margin-right: 2%;}
+.recentM .recent:last-child {margin-right: 0;}
+.recentM h2 {font-size: 20px; font-weight: bold; margin-bottom: 12px; margin-top: 5px; border-top: 1px solid #ebebeb; padding-top: 20px;}
+.recentM .recent-title .rt-stit {font-size: 17px; font-weight: 500; line-height: 1.9;}
+.recentM .recent-title .rt-tit {font-size: 15px; color: #908f94; font-weight: 300;}
 
 
+/* nextM */
+.nextM {}
+.nextM h2 {font-size: 20px; font-weight: bold; margin-bottom: 12px; margin-top: 5px; border-top: 1px solid #ebebeb; padding-top: 20px;}
+.nextM .next {display: flex; margin-bottom: 16px; position: relative;}
+.nextM .next:after {
+    content: '';
+    position: absolute; right: 0; bottom: -8px;
+    width: calc(100% - 210px);
+    height: 1px;
+    background: #ebebeb;
+
+}
+.nextM .next .next-img {width: 200px; margin-right: 12px;}
+.nextM .next .next-tit {display: flex; flex-direction: column; justify-content: center;}
+.nextM .next .next-tit .nt-stit {color: #DA5E73; font-size: 12px;}
+.nextM .next .next-tit .nt-tit {font-weight: 16px;}
+.nextM .next .next-tit .nt-desc {
+    font-size: 13px; color: #a1a1a1; font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 
 /* mediaquery(화면 크기에 따라 배치 설정) */
 @media (max-width: 1020px){
